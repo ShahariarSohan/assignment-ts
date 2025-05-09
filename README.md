@@ -12,14 +12,14 @@ In a simple way enums define a set of named constants.In typescript we use enums
 
 #### Examples :
 
-enum Color {
-Red = "RED",
-Green = "GREEN",
-Blue = "BLUE"
-Black="Black"
-}
-let myColor: Color = Color.Green;
-console.log(myColor); // Output: "GREEN"
+enum Color {\
+Red = "RED",\
+Green = "GREEN",\
+Blue = "BLUE"\
+Black="Black"\
+}\
+let myColor: Color = Color.Green;\
+console.log(myColor);\ // Output: "GREEN"
 
 #### Numeric Enum
 
@@ -27,13 +27,13 @@ console.log(myColor); // Output: "GREEN"
 
 #### Examples :
 
-enum Direction {
-Up, // 0
-Down, // 1
-Left, // 2
-Right // 3
-}
-let move: Direction = Direction.Up;
+enum Direction {\
+Up, // 0\
+Down, // 1\
+Left, // 2\
+Right // 3\
+}\
+let move: Direction = Direction.Up;\
 console.log(move); // Output: 0
 
 ### Type Inference
@@ -42,10 +42,10 @@ Type inference is a built-in feature of typescript. It is a feature that helps c
 
 #### Examples
 
-const name="Jhankar Mahbub";
-const number =10;
-const isTrue =true; // here typescript can inferred type easily but for some cases complex typescript will able to infer type.
-const user={
-name:"Mir Hossain"
-contactNo:"Nai"
+const name="Jhankar Mahbub";\
+const number =10;\
+const isTrue =true;\ // here typescript can inferred type easily but for some cases complex typescript will able to infer type.\
+const user={\
+name:"Mir Hossain"\
+contactNo:"Nai"\
 }

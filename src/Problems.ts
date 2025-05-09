@@ -6,7 +6,6 @@ function formatString(input: string, booleanValue?: boolean): string {
   }
 }
 
-//
 function filterByRating(
   items: { title: string; rating: number }[]
 ): { title: string; rating: number }[] {
@@ -14,9 +13,6 @@ function filterByRating(
   return result;
 }
 
-//
-
-//
 class Vehicle {
   private make: string;
   private year: number;
@@ -40,7 +36,7 @@ class Car extends Vehicle {
     console.log(`Model : ${this.model}`);
   }
 }
-//
+
 function processValue(value: string | number): number {
   if (typeof value === "string") {
     return value.length;
@@ -48,7 +44,7 @@ function processValue(value: string | number): number {
     return value * 2;
   }
 }
-//
+
 interface Product {
   name: string;
   price: number;
@@ -72,9 +68,7 @@ const products = [
   { name: "Bag", price: 400 },
   { name: "Bag", price: 5 },
 ];
-console.log(getMostExpensiveProduct(products));
-// Output: { name: "Bag", price: 50 })
-//
+
 async function squareAsync(value: number): Promise<number> {
   return new Promise((resolve, reject) => {
     if (value >= 0) {
