@@ -2,7 +2,7 @@
 
 ### Enums
 
-In a simple way enums define a set of named constants.In typescript we use enums to work with set of values in a typical manner that means type safe manner. Because in Typescript static type is the main concept.So enums has create a convenient way to improve code readability and maintainability with set of values.
+In a simple way enums define a set of named constants.In typescript we use enums to work with set of values in a typical manner that means type safe manner. Because in Typescript static typing is the main concept.So enums has created a convenient way to improve code readability and maintainability with set of values.
 
 #### Enums can be either numeric or string-based. Here is the examples :
 
@@ -12,6 +12,7 @@ In a simple way enums define a set of named constants.In typescript we use enums
 
 #### Examples :
 
+```
 enum Color {\
 Red = "RED",\
 Green = "GREEN",\
@@ -21,12 +22,15 @@ Black="Black"\
 let myColor: Color = Color.Green;\
 console.log(myColor); // Output: "GREEN"
 
+```
+
 #### Numeric Enum
 
 - Numeric enums auto-increment numbers (but you can set starting values)
 
 #### Examples :
 
+```
 enum Direction {\
 Up, // 0\
 Down, // 1\
@@ -35,6 +39,8 @@ Right // 3\
 }\
 let move: Direction = Direction.Up;\
 console.log(move); // Output: 0
+
+```
 
 ### Type Inference
 
@@ -49,4 +55,4 @@ const user={\
 name:"Mir Hossain"\
 contactNo:"Nai"\
 }\
-// here typescript can inferred type easily but for some cases complex typescript will not able to infer type.
+// here typescript can inferred type easily but for some complex cases typescript will not able to infer type.

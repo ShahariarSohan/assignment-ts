@@ -12,7 +12,14 @@ function filterByRating(
   const result = items.filter((item) => item.rating >= 4);
   return result;
 }
+function concatenateArrays<T>(...arrays: T[][]): T[] {
+  const [array1, array2, ...array3] = arrays;
+  const result = [...array1, ...array2, ...array3];
+  console.log(result);
+}
 
+concatenateArrays(["a", "b"], ["c", "d"], ["e"], ["f"], ["g"]); // Output: ["a", "b", "c"]
+concatenateArrays([1, 2], [3, 4], [5]); // Output: [1, 2, 3, 4, 5]
 class Vehicle {
   private make: string;
   private year: number;
@@ -61,13 +68,6 @@ function getMostExpensiveProduct(products: Product[]): Product | null {
     return result2;
   }
 }
-const products = [
-  { name: "Pen", price: 100 },
-  { name: "Notebook", price: 2500 },
-  { name: "Bag", price: 5 },
-  { name: "Bag", price: 400 },
-  { name: "Bag", price: 5 },
-];
 
 async function squareAsync(value: number): Promise<number> {
   return new Promise((resolve, reject) => {
