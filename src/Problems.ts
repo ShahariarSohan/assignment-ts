@@ -13,13 +13,12 @@ function filterByRating(
   return result;
 }
 function concatenateArrays<T>(...arrays: T[][]): T[] {
-  const [array1, array2, ...array3] = arrays;
-  const result = [...array1, ...array2, ...array3];
-  console.log(result);
+  const combinedArray = arrays.reduce((acc, curr) => acc.concat(curr), []);
+  return combinedArray;
 }
+console.log(concatenateArrays(["a", "b"], ["c"], ["d"])); // Output: ["a", "b", "c"]
+console.log(concatenateArrays([1, 2], [3, 4], [5], [6])); // Output: [1, 2, 3, 4, 5]
 
-concatenateArrays(["a", "b"], ["c", "d"], ["e"], ["f"], ["g"]); // Output: ["a", "b", "c"]
-concatenateArrays([1, 2], [3, 4], [5]); // Output: [1, 2, 3, 4, 5]
 class Vehicle {
   private make: string;
   private year: number;
