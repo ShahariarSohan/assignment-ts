@@ -19,7 +19,7 @@ Blue = "BLUE"\
 Black="Black"\
 }\
 let myColor: Color = Color.Green;\
-console.log(myColor);\ // Output: "GREEN"
+console.log(myColor); // Output: "GREEN"
 
 #### Numeric Enum
 
@@ -44,8 +44,9 @@ Type inference is a built-in feature of typescript. It is a feature that helps c
 
 const name="Jhankar Mahbub";\
 const number =10;\
-const isTrue =true;\ // here typescript can inferred type easily but for some cases complex typescript will able to infer type.\
+const isTrue =true;
 const user={\
 name:"Mir Hossain"\
 contactNo:"Nai"\
-}
+}\
+// here typescript can inferred type easily but for some cases complex typescript will not able to infer type.
