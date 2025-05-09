@@ -44,7 +44,7 @@ console.log(move); // Output: 0
 
 ### Type Inference
 
-Type inference is a built-in feature of typescript. It is a feature that helps compiler to determine type of variable without explicit type .That means when the type of a variable is implicit .The inference feature auto determine the of variable.Which makes the life easy for developers of this generation.This is one of reason that typescript becoming famous day by day.
+Type inference is a built-in feature of typescript. It is a feature that helps compiler to determine type of variable without explicit type .That means when the type of a variable is implicit .The inference feature auto determine type of variable.Which makes the life easy for developers of this generation.This is one of reason that typescript becoming famous day by day.
 
 #### Examples
 

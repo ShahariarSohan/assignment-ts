@@ -16,8 +16,6 @@ function concatenateArrays<T>(...arrays: T[][]): T[] {
   const combinedArray = arrays.reduce((acc, curr) => acc.concat(curr), []);
   return combinedArray;
 }
-console.log(concatenateArrays(["a", "b"], ["c"], ["d"])); // Output: ["a", "b", "c"]
-console.log(concatenateArrays([1, 2], [3, 4], [5], [6])); // Output: [1, 2, 3, 4, 5]
 
 class Vehicle {
   private make: string;
@@ -60,25 +58,13 @@ function getMostExpensiveProduct(products: Product[]): Product | null {
   if (products.length === 0) {
     return null;
   } else {
-    const result1 = products?.sort(
+    const sorted = products?.sort(
       (product1, product2) => product2.price - product1.price
     );
-    const result2 = result1?.find((product) => product);
-    return result2;
+    return sorted[0];
   }
 }
 
-async function squareAsync(value: number): Promise<number> {
-  return new Promise((resolve, reject) => {
-    if (value >= 0) {
-      setTimeout(() => {
-        resolve(value * value);
-      }, 1000);
-    } else {
-      reject("Negative number not allowed");
-    }
-  });
-}
 enum Day {
   Monday = "Weekday",
   Tuesday = "Weekday",
@@ -91,4 +77,16 @@ enum Day {
 
 function getDayType(day: Day): string {
   return day;
+}
+
+async function squareAsync(value: number): Promise<number> {
+  return new Promise((resolve, reject) => {
+    if (value >= 0) {
+      setTimeout(() => {
+        resolve(value * value);
+      }, 1000);
+    } else {
+      reject("Negative number not allowed");
+    }
+  });
 }
